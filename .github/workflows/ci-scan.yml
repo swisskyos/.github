@@ -53,8 +53,8 @@ jobs:
 
           Action required: rotate/revoke exposed credentials and remove secrets from git history if needed."
 
-          gh issue create --title "$title" --body "$body" --label "security" || \
-          gh issue create --title "$title" --body "$body"
+          gh issue create --repo "${{ github.repository }}" --title "$title" --body "$body" --label "security" || \
+          gh issue create --repo "${{ github.repository }}" --title "$title" --body "$body"
 
 
 
