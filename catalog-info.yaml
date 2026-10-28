@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: swisskyos-github-org
+  namespace: kyos
+  description: "GitHub organization configuration for Kyos (public org settings and default files)."
+  tags:
+    - github
+    - organization
+    - config
+  annotations:
+    github.com/project-slug: swisskyos/.github
+spec:
+  type: organization
+  owner: group:kyos/it-team
+  system: kyos-platform
